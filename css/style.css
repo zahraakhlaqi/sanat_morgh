@@ -403,6 +403,7 @@ a {
 }
 
 .form input,
+.form textarea,
 .form select {
   padding: 1.5rem 1rem;
   outline: 0;
@@ -940,4 +941,129 @@ a {
 
 .color--secondary {
   color: var(--color-secondary);
+}
+
+/*about us page*/
+
+.aboutUs-hero {
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutUs-hero__overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUs-title {
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  width: 90%;
+}
+
+.aboutUs-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 5rem 10rem 4rem 10rem;
+}
+@media screen and (max-width: 768px) {
+  .aboutUs-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs-content {
+    margin: 3rem 5rem 3rem 5rem;
+  }
+}
+
+/*contact us page*/
+
+.contactus-hero {
+  display: flex;
+  background-position: center;
+  background-size: cover;
+}
+
+.contactus-hero__overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactus-title {
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  width: 90%;
+}
+
+/* form */
+
+.contactus-content__wrapper {
+  display: flex;
+  width: 80%;
+  align-self: center;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.contactus-content__form,
+.contactus-content__txt {
+  width: 50%;
+  padding-inline-start: 1rem;
+}
+
+.contactus-content__txt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactus-content__txt-title {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .contactus-content__wrapper {
+    width: 95%;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .contactus-content__wrapper > * {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+  .contact__way{
+    font-size: 1.4rem;
+
+  }
+}
+
+.fa-solid {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+}
+.contact__way {
+  display: flex;
+  gap: 1rem;
 }
